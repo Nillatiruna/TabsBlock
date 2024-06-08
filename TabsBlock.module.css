@@ -1,0 +1,149 @@
+.tabsHeader {
+  position: relative;
+  width: fit-content;
+}
+.activeTab {
+  overflow: visible;
+  height: auto;
+}
+
+.disabledTab {
+  display: none;
+  overflow: hidden;
+  height: 0;
+}
+
+.dashboardHead {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dashboardTab {
+  margin: 5px;
+  padding: 6px 12px;
+  border: 2px solid #e1dedeb0;
+  cursor: pointer;
+  background-color: #e1dedeb0;
+}
+
+.dashboardTab:hover {
+  border: 2px solid var(--disable-color);
+  box-shadow: 0 2px 3px #ccc, 0 2px 3px #ccc;
+  transition: box-shadow 0.3s;
+}
+
+.dashboardTabActive {
+  border: 2px solid var(--secondary-color) !important;
+  color: var(--secondary-color) !important;
+  background-color: var(--ground_color) !important;
+}
+
+.dashboardBody {
+  max-width: 1300px;
+  padding-top: 20px;
+}
+
+.mainHead {
+  display: flex;
+}
+
+.mainTab {
+  width: 140px;
+  color: var(--secondary-text-color);
+  padding: 7px 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.mainTab:hover {
+  cursor: pointer;
+  background: #efefef;
+}
+
+.mainTabActive {
+  color: var(--primary-text-color);
+  font-weight: 600;
+}
+
+.mainTabActive:hover {
+  cursor: auto;
+  background: none;
+}
+
+.switcherContainer {
+  margin-bottom: 29px;
+}
+
+.pricesHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--ground_color) !important;
+  margin-bottom: 20px;
+  padding-top: 0;
+}
+
+.pricesTab {
+  width: 270px;
+  color: var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
+  padding: 15px 40px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricesTab:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--axis-background);
+}
+
+.pricesTabActive {
+  color: var(--ground_color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--primary-color);
+}
+
+.pricesTabActive:hover {
+  color: var(--ground_color);
+  background-color: var(--primary-color);
+}
+
+.settingsHead {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--disable-color);
+  margin-bottom: 20px;
+}
+
+.settingsTab {
+  padding: 10px 30px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.settingsTab:hover {
+  cursor: pointer;
+  color: var(--disable-color);
+}
+
+.settingsTabActive {
+  border: 1px solid var(--disable-color);
+  border-bottom: 1px solid var(--ground_color);
+  margin-bottom: -1px;
+}
+
+.settingsTabActive:hover {
+  cursor: auto;
+  color: var(--primary-color);
+}
